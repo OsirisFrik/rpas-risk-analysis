@@ -1,0 +1,27 @@
+.el-button {
+  text-transform: capitalize;
+}
+
+.txt {
+  text-transform: initial;
+
+  &-upper {
+    text-transform: uppercase;
+  }
+
+  &-low {
+    text-transform: lowercase;
+  }
+
+  &-cap {
+    text-transform: capitalize;
+  }
+
+  &-none {
+    text-transform: none;
+  }
+}
+
+.word {
+  word-break: break-word;
+}
