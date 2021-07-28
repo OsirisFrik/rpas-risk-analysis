@@ -1,0 +1,10 @@
+{
+  "planification": "planification",
+  "obstacle": "obstacle hazards",
+  "meteor": "meteorlogical hazards",
+  "vrfHazards": "VRF hazards",
+  "payLoad": "pay load",
+  "descriptions": {
+    "planification": "des"
+  }
+}
