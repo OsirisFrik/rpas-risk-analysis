@@ -25,3 +25,25 @@
 .word {
   word-break: break-word;
 }
+
+input {
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}
+
+.el-select-v2 {
+  &__placeholder {
+    left: -70px;
+
+    &.is-transparent {
+      left: -35px;
+    }
+  }
+
+  width: 100%;
+}
+
+.el-select-group__title {
+  text-transform: uppercase;
+}

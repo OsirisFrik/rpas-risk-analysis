@@ -1,0 +1,18 @@
+{
+  "firstName": "first name",
+  "middleName": "middle name",
+  "lastName": "last name",
+  "secondLastName": "second last name",
+  "fullName": "full name",
+  "email": "email",
+  "licence": "licence",
+  "licenceNumber": "licence number",
+  "registry": "registry",
+  "confirmInfo": "confirm info",
+  "birthday": "birthday",
+  "expirationDate": "expiration date",
+  "country": "country",
+  "select": "select {a}",
+  "topCountries": "top countries",
+  "countries": "countries"
+}

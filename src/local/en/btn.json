@@ -2,5 +2,8 @@
   "confirm": "confirm",
   "decline": "decline",
   "cancel": "cancel",
-  "accept": "accept"
+  "accept": "accept",
+  "save": "save",
+  "next": "next",
+  "back": "back"
 }

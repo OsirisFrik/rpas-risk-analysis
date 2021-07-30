@@ -1,8 +1,9 @@
 <template>
   <main-modal
-    :show="_show"
-    :title="title"
-    width="50%">
+    v-bind="$props">
+    <template #title>
+      <slot name="title" />
+    </template>
     <template #body>
       <slot name="body"></slot>
     </template>

@@ -14,8 +14,10 @@
     "useDefineForClassFields": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
+    "typeRoots": ["src/index.d.ts"],
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "src/types.d.ts"
     ],
     "paths": {
       "@/*": [
@@ -34,7 +36,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx", 
+    "src/index.d.ts"
   ],
   "exclude": [
     "node_modules"

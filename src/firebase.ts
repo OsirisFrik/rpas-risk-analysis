@@ -9,4 +9,4 @@ const config = JSON.parse(configStr)
 
 firebase.initializeApp(config)
 
-firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+// firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
