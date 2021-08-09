@@ -5,6 +5,23 @@
   "vrfHazards": "VRF hazards",
   "payLoad": "pay load",
   "descriptions": {
-    "planification": "des"
+    "planification": ""
+  },
+  "form": {
+    "pilotInCommand": "pilot in command",
+    "estimedTime": "estimed flight time",
+    "coors": "coords",
+    "lat": "latitude",
+    "long": "longitude",
+    "place": "place",
+    "startHour": "start hour",
+    "endHour": "end hour",
+    "criticalAirport": "critical airpot",
+    "marking": "marking",
+    "distance": "distance",
+    "elevation": "elevation",
+    "azimuth": "azimuth",
+    "metar": "metar",
+    "weatherObservation": "weather obser"
   }
 }
