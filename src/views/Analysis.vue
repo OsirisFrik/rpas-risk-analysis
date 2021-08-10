@@ -6,18 +6,20 @@
       icon="ri-flight-takeoff-line">
     </el-step>
   </el-steps>
-  <template v-if="currentStape === steps.basic">
-    basic
-  </template>
-  <template v-else-if="currentStape === steps.metar">
-    metar
-  </template>
-  <template v-else-if="currentStape === steps.observations">
-    observations
-  </template>
-  <span>
-    <button @click="currentStape += 1">next</button>
-  </span>
+  <el-form>
+    <template v-if="currentStape === steps.basic">
+      <basic-info v-model="formData" />
+    </template>
+    <template v-else-if="currentStape === steps.metar">
+      metar
+    </template>
+    <template v-else-if="currentStape === steps.observations">
+      observations
+    </template>
+    <span>
+      <button @click="currentStape += 1">next</button>
+    </span>
+  </el-form>
 </template>
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
