@@ -87,9 +87,20 @@ input {
     text-align: left !important;
   }
   .lat-padding{
-    padding-right: 0px;
+    padding-right: 0px !important;
   }
   .long-padding{
-    padding-left: 0px;
+    padding-left: 0px !important;
+  }
+
+  .border-right{
+    border-right: 1px solid gray;
+  }
+  .border-left{
+    border-left: 1px solid gray;
+  }
+  .color-button{
+    background-color: #003A89;
+    border: none;
   }
 }

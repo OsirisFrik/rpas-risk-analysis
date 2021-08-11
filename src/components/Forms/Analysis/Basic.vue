@@ -4,7 +4,7 @@
             <el-form-item
             :label="$t('analysis.form.pilotInCommand')">
                <el-input
-                v-model="_value.start"
+                v-model="_value.pilot"
                 :placeholder="$t('analysis.form.pilotInCommand')"
                 size="normal">
                 <template #suffix>
@@ -17,7 +17,7 @@
               <el-form-item
               :label="$t('analysis.form.license')">
                 <el-input
-                    v-model="_value.start"
+                    v-model="_value.licence"
                     :placeholder="$t('analysis.form.license')"
                     size="normal">
                         <template #suffix>
@@ -42,16 +42,19 @@
             </el-form-item>
           </el-col>
            <el-col :sm="24" :md="24" :lg="16" xl="16">
-             <el-form-item
-            :label="$t('analysis.form.startHour')">
-            <el-date-picker
-            class="date-picker"
-              v-model="start"
-              type="datetimerange"
-              start-placeholder="Start Date"
-              end-placeholder="End Date">
-            </el-date-picker>
-              </el-form-item>
+                 <el-form-item
+              :label="$t('analysis.form.startHour')">
+                 <div class="block">
+                  <el-date-picker
+                    class="date-picker"
+                    v-model="_value.start"
+                    type="datetimerange"
+                    start-placeholder="Start Date"
+                    end-placeholder="End Date"
+                    :default-time="defaultTime1">
+                  </el-date-picker>
+                </div>
+               </el-form-item>
             </el-col>
           </el-row>
     <el-row :gutter="24">
@@ -59,9 +62,10 @@
             <el-form-item
             :label="$t('analysis.form.lat')">
               <el-input
-                v-model="_value.start"
+                v-model="_value.latitude"
                 :placeholder="$t('analysis.form.lat')"
-                size="normal">
+                size="normal"
+                class="border-rigth">
                     <template #suffix>
                         <i class="ri-china-railway-fill"></i>
                       </template>
@@ -72,9 +76,10 @@
             <el-form-item
               :label="$t('analysis.form.long')">
                 <el-input
-                  v-model="_value.start"
+                  v-model="_value.longitude"
                   :placeholder="$t('analysis.form.long')"
-                  size="normal">
+                  size="normal"
+                  class="border-left">
                     <template #suffix>
                         <i class="ri-china-railway-fill"></i>
                       </template>
@@ -87,7 +92,7 @@
               <el-form-item
               :label="$t('analysis.form.sitio')">
                 <el-input
-                  v-model="_value.start"
+                  v-model="_value.sitio"
                   :placeholder="$t('analysis.form.sitio')"
                   size="normal">
                    <template #suffix>
@@ -100,7 +105,7 @@
               <el-form-item
               :label="$t('analysis.form.elevation')">
                 <el-input
-                  v-model="_value.start"
+                  v-model="_value.elevation"
                   :placeholder="$t('analysis.form.elevation')"
                   size="normal" >
               <template #suffix>
@@ -115,11 +120,11 @@
           <el-form-item
           :label="$t('analysis.form.criticalAirport')">
             <el-input
-              v-model="_value.start"
+              v-model="_value.airport"
               :placeholder="$t('analysis.form.criticalAirport')"
               size="normal">
                   <template #suffix>
-                        <i class="ri-map-pin-fill"></i>
+                        <i class="ri-plane-line"></i>
                       </template>
                   </el-input>
           </el-form-item>
@@ -130,7 +135,7 @@
           <el-form-item
           :label="$t('analysis.form.distance')">
             <el-input
-              v-model="_value.start"
+              v-model="_value.dist"
               :placeholder="$t('analysis.form.distance')"
               size="normal">
                <template #suffix>
@@ -143,7 +148,7 @@
             <el-form-item
             :label="$t('analysis.form.azimuth')">
               <el-input
-                v-model="_value.start"
+                v-model="_value.mark"
                 :placeholder="$t('analysis.form.azimuth')"
                 size="normal">
                     <template #suffix>
@@ -163,6 +168,8 @@ interface BasicData {
   estimeTime: string
   start: string
   end: string
+  latitude: string
+  longitude:string
   airport: string
   elevation: string
   mark: string

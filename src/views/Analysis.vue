@@ -20,9 +20,21 @@
       <template v-else-if="currentStape === steps.observations">
         observations
       </template>
-      <span>
-        <button @click="currentStape += 1">next</button>
-      </span>
+          <el-button-group>
+          <el-button
+          class="color-button"
+            type="primary">
+            <i class="ri-arrow-left-s-line" />
+           Previous
+          </el-button>
+          <el-button
+          class="color-button"
+            type="primary"
+            native-type="submit">
+            Next
+          <i class="ri-arrow-right-s-line" />
+          </el-button>
+        </el-button-group>
     </el-form>
     </el-container>
   </main>
@@ -53,6 +65,8 @@ export default class AnalysisForm extends Vue {
     estimeTime: '',
     start: '',
     end: '',
+    latitude: '',
+    longitude: '',
     airport: '',
     elevation: '',
     mark: '',
