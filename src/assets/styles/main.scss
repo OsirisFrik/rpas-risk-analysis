@@ -47,3 +47,49 @@ input {
 .el-select-group__title {
   text-transform: uppercase;
 }
+.main-background {
+  background-color: #edf2f7;
+}
+.title-upper{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #003A89;
+  font-size: px;
+}
+.el-container-center{
+  justify-content: center;
+}
+.el-form{
+  background-color: #fff;
+  padding: 40px;
+  border-top: 3px solid #003A89;
+}
+
+.input-analysis{
+    .el-form-item__label {
+    color: #003A89;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+
+  input {
+    border: none;
+    background: #f3f7f9;
+  }
+  .date-picker{
+    border: none;
+    background: #f3f7f9;
+    width:100%;
+  }
+  .el-form-item__content{
+    text-align: left !important;
+  }
+  .lat-padding{
+    padding-right: 0px;
+  }
+  .long-padding{
+    padding-left: 0px;
+  }
+}
