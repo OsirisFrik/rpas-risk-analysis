@@ -1,16 +1,16 @@
 <template>
   <el-dialog
     v-model="_show"
+    v-bind="options"
     :title="title"
     :width="width"
     @close="_show = false">
+    <template #title>
+      <slot name="title"/>
+    </template>
     <slot name="body" />
     <template #footer>
-      <slot name="footer">
-        <el-button type="info" size="medium" @click="close">
-
-        </el-button>
-      </slot>
+      <slot name="footer" />
     </template>
   </el-dialog>
 </template>

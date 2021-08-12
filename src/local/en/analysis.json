@@ -1,0 +1,29 @@
+{
+  "planification": "planification",
+  "obstacle": "obstacle hazards",
+  "meteor": "meteorlogical hazards",
+  "vrfHazards": "VRF hazards",
+  "payLoad": "pay load",
+  "descriptions": {
+    "planification": ""
+  },
+  "form": {
+    "pilotInCommand": "Pilot in command",
+    "license": "Number license",
+    "estimedTime": "Estimed flight time",
+    "coors": "Coordinates",
+    "lat": "Latitude",
+    "long": "Longitude",
+    "sitio": "Sitio",
+    "place": "place",
+    "startHour": "Start hour",
+    "endHour": "End hour",
+    "criticalAirport": "Critical airpot",
+    "marking": "marking",
+    "distance": "Distance",
+    "elevation": "Elevation",
+    "azimuth": "Azimuth",
+    "metar": "metar",
+    "weatherObservation": "weather obser"
+  }
+}

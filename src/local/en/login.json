@@ -1,6 +1,6 @@
 {
   "login": "login",
-  "signUp": "signup",
+  "signup": "signup",
   "logout": "logout",
   "termsAndConditions": "Terms & Conditions",
   "terms": "When you accept the platform Terms & Conditions, you allow use form data to analytics and statistics."
